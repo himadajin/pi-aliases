@@ -1,0 +1,36 @@
+{
+  "name": "pi-aliases",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Session and exit command aliases for Pi",
+  "type": "module",
+  "keywords": [
+    "pi-package"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himadajin/pi-aliases.git"
+  },
+  "files": [
+    "extensions",
+    "README.md"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/aliases.ts"
+    ]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
